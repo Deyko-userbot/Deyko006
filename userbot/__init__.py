@@ -150,9 +150,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/Tonic990/Tonic-Userbot")
+    "https://github.com/Deyko-userbot/Deyko006")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "Tonic-Userbot")
+    "UPSTREAM_REPO_BRANCH", "Deyko-Userbot")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -209,7 +209,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "Tonic-Userboot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "Deyko-Userboot")
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "5.0")
@@ -218,7 +218,7 @@ BOT_VER = os.environ.get("BOT_VER", "5.0")
 ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
 
 # Sticker Custom Pack Name
-S_PACK_NAME = os.environ.get("S_PACK_NAME") or "Tonic-Userbot"
+S_PACK_NAME = os.environ.get("S_PACK_NAME") or "Deyko-Userbot"
 
 # Cmd Handler Costum
 CMD_HANDLER = os.environ.get("CMD_HANDLER") or "."
@@ -226,23 +226,23 @@ CMD_HANDLER = os.environ.get("CMD_HANDLER") or "."
 SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"$")
 
 # Support
-GROUP = os.environ.get("GROUP", "PrimeSupportGroup")
-CHANNEL = os.environ.get("CHANNEL", "PrimeSupportChannel")
+GROUP = os.environ.get("GROUP", "deysupport")
+CHANNEL = os.environ.get("CHANNEL", "bngbctmlu")
 
 # Default .alive Logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/33193e0075fc37c000379.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/ae55a01da1b7411da54e5.jpg"
 
 # Default .helpme Logo
 INLINE_PIC = os.environ.get(
-    "INLINE_PIC") or "https://telegra.ph/file/33193e0075fc37c000379.jpg"
+    "INLINE_PIC") or "https://telegra.ph/file/ae55a01da1b7411da54e5.jpg"
 
 # Default emoji help
 EMOJI_HELP = os.environ.get("EMOJI_HELP") or "✨"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
-DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "Tonic-Userbot"
+DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "Deyko-Userbot"
 
 LASTFM_API = os.environ.get("LASTFM_API", None)
 LASTFM_SECRET = os.environ.get("LASTFM_SECRET", None)
@@ -340,7 +340,7 @@ async def check_botlog_chatid() -> None:
 async def update_restart_msg(chat_id, msg_id):
     DEFAULTUSER = ALIVE_NAME or "Set `ALIVE_NAME` ConfigVar!"
     message = (
-        f"**Tonic-Userbot v{BOT_VER} is back up and running!**\n\n"
+        f"**Deyko-Userbot v{BOT_VER} is back up and running!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
         f"**User:** {DEFAULTUSER}"
@@ -449,7 +449,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 current_page_number = int(lockpage)
                 buttons = paginate_help(current_page_number, dugmeler, "helpme")
-                text = f"**✗ Tonic-Userbot Inline Menu ✗**\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules"
+                text = f"**✗ Deyko-Userbot Inline Menu ✗**\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules"
                 await event.edit(
                     text,
                     file=roselogo,
@@ -531,12 +531,12 @@ with bot:
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@TonicUserbot"):
+            if event.query.user_id == uid and query.startswith("@DeykoUserbot"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
                     file=roselogo,
                     link_preview=False,
-                    text=f"**✗ Tonic-Userbot Inline Menu ✗**\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**✗ Deyko-Userbot Inline Menu ✗**\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
@@ -545,12 +545,12 @@ with bot:
                     description="Repository Tonic - Userbot",
                     url="https://t.me/PrimeSupportGroup",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text="**Tonic - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Toni-Ex](https://t.me/Bukan_guudlooking)\n✣ **Support :** @PrimeSupportGroup\n✣ **Repository :** [Tonic-Userbot](https://github.com/Tonic990/Tonic-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**Deyko - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Deyko](https://t.me/Unrealdeyko)\n✣ **Support :** @deysupport\n✣ **Repository :** [Deyko-Userbot](https://github.com/Deyko-userbot/Deyko006)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/PrimeSupportGroup"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/deysupport"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/Tonic990/Tonic-Userbot"
+                                "ʀᴇᴘᴏ", "https://github.com/Deyko-userbot/Deyko006"
                             ),
                         ],
                     ],
@@ -590,16 +590,16 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="✗ Tonic-Userbot ✗",
-                    description="Tonic - UserBot | Telethon",
-                    url="https://t.me/PrimeSupportGroup",
+                    title="✗ Deyko-Userbot ✗",
+                    description="Deyko - UserBot | Telethon",
+                    url="https://t.me/deysupport",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text=f"**Tonic - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✣ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @PrimeSupportGroup\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**Deyko - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✣ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @PrimeSupportGroup\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/PrimeSupportGroup"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/deysupport"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/Tonic990/Tonic-Userbot"
+                                "ʀᴇᴘᴏ", "https://github.com/Deyko-userbot/Deyko006"
                             ),
                         ],
                     ],
