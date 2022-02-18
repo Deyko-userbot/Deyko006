@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="https://telegra.ph/file/33193e0075fc37c000379.jpg">
+  <img src="https://telegra.ph/file/ae55a01da1b7411da54e5.jpg">
 </p>
 
 ## <p align="center">DEPLOY TO HEROKU</p>
@@ -22,7 +22,7 @@
 
 ## Group Support:
 
-   <a href="https://t.me/PrimeSupportGroup"><img src="https://img.shields.io/badge/Group%20Support%3F-yes-green?&style=flat-square?&logo=telegram" width=220px></a></p>
+   <a href="https://t.me/deysupport"><img src="https://img.shields.io/badge/Group%20Support%3F-yes-green?&style=flat-square?&logo=telegram" width=220px></a></p>
 
 ## String Session :
 
