@@ -1,7 +1,7 @@
 {
-  "name": "✨ ᴛᴏɴɪᴄ-ᴜsᴇʀʙᴏᴛ ✨",
-  "description": "🚫Tonic-Userbot🚫 USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
-  "logo": "https://telegra.ph/file/33193e0075fc37c000379.jpg",
+  "name": "✨ Deyko-Userbot✨",
+  "description": "🚫Deyko-Userbot🚫 USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
+  "logo": "https://telegra.ph/file/ae55a01da1b7411da54e5.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
 ],
-  "repository": "https://github.com/Tonic990/Tonic-User",
-  "telegram": "https://t.me/Bukan_guudlooking",
-  "success_url": "https://t.me/PrimeSupportGroup",
+  "repository": "https://github.com/Deyko-userbot/Deyko006",
+  "telegram": "https://t.me/Unrealdeyko",
+  "success_url": "https://t.me/deysupport",
   "stack": "container",
   "env": {
     "API_KEY": {
