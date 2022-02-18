@@ -24,7 +24,7 @@ try:
         sys.exit(1)
     if not DEVS:
         LOGS.warning(
-            f"EOL\nTonic-UserBot v{BOT_VER}, Copyright © 2021-2022 Tonic-Userbot• <https://github.com/Deyko-userbot/Deyko006>"
+            f"EOL\nDeyko-UserBot v{BOT_VER}, Copyright © 2021-2022 Deyko-Userbot• <https://github.com/Deyko-userbot/Deyko006>"
         )
         sys.exit(1)
 except Exception as e:
@@ -35,7 +35,7 @@ for module_name in ALL_MODULES:
     imported_module = import_module("userbot.modules." + module_name)
 
 LOGS.info(
-    f"Jika {user.first_name} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/Bukan_guudlooking"
+    f"Jika {user.first_name} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/deysupport"
 )
 
 LOGS.info(f"Deyko-Userbot ⚙️ V{BOT_VER} [🔥 BERHASIL DIAKTIFKAN! 🔥]")
