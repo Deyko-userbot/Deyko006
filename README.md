@@ -1,4 +1,4 @@
-# Tonic-Userbot Telegram
+# Deyko-Userbot Telegram
 
 </p>
 <p align="center">
