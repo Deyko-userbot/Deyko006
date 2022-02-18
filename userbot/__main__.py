@@ -19,12 +19,12 @@ try:
     ).json()
     if user.id in blacklistrose:
         LOGS.warning(
-            "MAKANYA GA USAH BERTINGKAH GOBLOK, USERBOTnya GUA MATIIN NAJIS BANGET DIPAKE JAMET KEK LU.\nCredits: @Bukan_guudlooking"
+            "MAKANYA GA USAH BERTINGKAH GOBLOK, USERBOTnya GUA MATIIN NAJIS BANGET DIPAKE JAMET KEK LU.\nCredits: @Unrealdeyko"
         )
         sys.exit(1)
     if not DEVS:
         LOGS.warning(
-            f"EOL\nTonic-UserBot v{BOT_VER}, Copyright © 2021-2022 Tonic-Userbot• <https://github.com/Tonic990>"
+            f"EOL\nTonic-UserBot v{BOT_VER}, Copyright © 2021-2022 Tonic-Userbot• <https://github.com/Deyko-userbot/Deyko006>"
         )
         sys.exit(1)
 except Exception as e:
@@ -38,7 +38,7 @@ LOGS.info(
     f"Jika {user.first_name} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/Bukan_guudlooking"
 )
 
-LOGS.info(f"Tonic-Userbot ⚙️ V{BOT_VER} [🔥 BERHASIL DIAKTIFKAN! 🔥]")
+LOGS.info(f"Deyko-Userbot ⚙️ V{BOT_VER} [🔥 BERHASIL DIAKTIFKAN! 🔥]")
 
 
 async def rose_userbot_on():
